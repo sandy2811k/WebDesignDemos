@@ -1,0 +1,77 @@
+﻿<html >
+<head>
+ 
+</head>
+<body>
+    <input type="button" value="Get Data" onclick="getData()"/>
+    <div id="d1"></div>
+
+    <script>
+        var promise = new Promise(function (resolve, reject)
+        {
+            var req = new XMLHttpRequest();
+            
+            req.open("GET", "https://jsonplaceholder.typicode.com/todos/");
+            req.onload = function ()
+            {
+                if (req.status == 200)
+                {
+                    resolve(req.response); // response contains data
+
+                }
+                else
+                {
+                    reject("Server error");
+                }
+            };
+            req.send();
+
+        });
+
+        //Get data Method
+        function getData() {
+            promise.then(function (data) {
+                display(data);
+            },
+                function (error) {
+                    errorFunction(error);
+                });
+        }
+
+        //Data will get the list
+        //promise.then(function (data)
+        //{
+        //    display(data);
+        //},
+        //    function (error)
+        //    {
+        //        errorFunction(error);
+        //    });
+
+        function display(data)
+        {
+            var list = JSON.parse(data);//JSON format data will typecast to JS object
+
+            var result = "<table border='1'><tr><th>user id</th><th>id</th><th>title</th><th>Complated</th></tr>";//Table border
+            for (var i = 0; i < list.length; i++)
+            {
+                result += "<tr><td>" + list[i].userId + "</td><td>" + list[i].id + "</td><td>" +
+                    list[i].title + "</td><td>" + list[i].completed + "</td></tr>";
+            }
+            result += "</table>";
+
+            document.getElementById("d1").innerHTML = result;
+        }
+        function errorFunction(error)
+        {
+
+            document.getElementById("d1").innerHTML = error;
+        }
+
+        
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+
+</head>
+<body>
+
+    <script>
+        let age = 23; //var age:number=23;
+        var Name = "Sandesh";
+        var city = "Nagar";
+        let per = 85.50;
+        var isActive = true;
+
+        document.write('My name is ' + Name + ' & age is ' + age);
+
+        if (age >= 18) {
+            document.write(' Valid User');
+        }
+        else {
+            documet.write('not valid user');
+        }
+        debugger
+        for (var i = 1; i <= 10; i++) {
+            document.write('<br/>' + i)
+        }
+
+        // --------------------------------------------------------
+
+        // function ---> not parameter & no return type
+        function Addition() {
+            var a = 10, b = 20;
+            var c = a + b;
+            document.write('<br/> Addition is ' + c);
+        }
+        // Call to a fuction
+        Addition();
+
+
+        //function ---> with parameter & no return type
+        function Substraction(a, b) {
+            var c = a - b;
+            document.write('<br/> Substraction is ' + c);
+        }
+
+        //call
+        Substraction(20, 13);
+
+
+        //function ---> with  return type & parameter
+        function Multiply(a, b) {
+            var c = a * b;
+            return c;
+        }
+        // call
+        var result = Multiply(10, 5);
+        document.write('<br/> Multiplication is ' + result);
+
+        //---------------------------------------------------------
+        //Scope in Javascript--
+
+        //---------------------------------------------------------
+
+        //Alert Msg
+        var name = "Rohan";
+
+
+        // alert('My name is ' + name);
+
+
+        //var result = confirm('Do you want to make payment ?')
+        ////OK -- true
+        //// Cancel - false
+
+
+        //if (result == true) {
+        //    document.write('you clicked ok, we will process payment.. <br/> do not press back button')
+        //}
+        //else {
+        //    document.write('you cancelled the payment');
+        //}
+    </script>
+
+
+    <script>
+
+        // Array in JavaScript
+
+        var names = ["Rohan", "Amol", "Shree", "Om", "Akshay", "Sanddy"];
+        for (let i = 0; i < names.length; i++) {
+            document.write("<br/>" + names[i]);
+        }
+
+
+        var numbers = [10, 20, 30, 40, 50, 60, 70, 80];
+        for (let i = 0; i < numbers.length; i++) {
+            document.write("<br/>" + numbers[i]);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿
+
+<html >
+<head>
+    
+</head>
+<body>
+    Enter a number:<input type="text" id="text1" /><br />
+    Enter a number:<input type="text" id="text2" /><br />
+    Result:<input type="text" id="text3" /><br />
+    <input type="button" id ="Addition" onclick="addition()" value="addition"/>
+    <input type="button" id="Subtraction" onclick="subtraction()" value="subtraction" />
+    <input type="button" id="Multiplication" onclick="multiplication()" value="multiplication"/>
+    <input type="button" id="Division" onclick="division()" value="division"/>
+    <script>
+        function addition(){
+            var a = document.getElementById("text1").value;//Read
+            var b = document.getElementById("text2").value;
+            //String to number using parseInt()
+            var c = parseInt(a) + parseInt(b);
+            document.getElementById("text3").value = c;//Write
+        }
+        function subtraction() {
+            var a = document.getElementById("text1").value;//Read
+            var b = document.getElementById("text2").value;
+            //String to number using parseInt()
+            var c = parseInt(a) - parseInt(b);
+            document.getElementById("text3").value = c;//Write
+        }
+        function multiplication() {
+            var a = document.getElementById("text1").value;//Read
+            var b = document.getElementById("text2").value;
+            //String to number using parseInt()
+            var c = parseInt(a) * parseInt(b);
+            document.getElementById("text3").value = c;//Write
+        }
+        function division() {
+            var a = document.getElementById("text1").value;//Read
+            var b = document.getElementById("text2").value;
+            //String to number using parseInt()
+            var c = parseInt(a) / parseInt(b);
+            document.getElementById("text3").value = c;//Write
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

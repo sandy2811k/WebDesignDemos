@@ -1,0 +1,86 @@
+/*this css is for desktop*/
+.carousel-inner{
+    height:450px;
+}
+.bg-body-tertiary {
+    background-color: #4180BF !important;
+
+}
+.navbar-nav .nav-link, .navbar-brand {
+    color: white !important;
+}
+    .navbar-nav .nav-link:hover{
+        text-decoration:underline;
+    }
+    #s1 img {
+        height: 200px;
+    }
+.card{
+    margin-bottom:20px;
+}
+#s1{
+    position:relative;
+    top:30px;
+}
+#s1 h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #4180BF;
+    }
+
+#footer{
+    background-color:black;
+    height:260px;
+    position:relative;
+    top:30px;
+}
+    #footer h5 {
+        position: relative;
+        top: 10px;
+        margin-left:30px;
+        color: darkgray;
+    }
+   #footer ul li{
+       list-style:none;
+   }
+   #footer ul li a{
+       position:relative;
+       top:10px;
+       color:white!important;
+       text-decoration:none;
+       text-align:left;
+   }
+   #footer p{
+       color:white;
+   }
+   #footer hr{
+       color:white;
+       
+   }
+   #footer .fa{
+       color:white;
+   }
+   #register{
+       position:relative;
+       top:50px;
+   }
+    #register .custom {
+        box-shadow: 3px 3px 2px lightgray;
+        border: 1px solid lightgray;
+    }
+
+#contact{
+    position:relative;
+    top:20px;
+}
+th {
+    background-color: #4180BF !important;
+    color:white !important;
+}
+
+    /*this css is for tab*/
+    @media only screen and (min-device-width:768px) and (max-device-width:1000px) {
+    }
+/*this css is for mobile*/
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+  
+}

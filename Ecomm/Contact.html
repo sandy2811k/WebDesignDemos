@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .bg-body-tertiary {
+            background-color: #2874f0 !important;
+        }
+
+            .carousel-inner {
+                height: 200px;
+                width: 200px;
+            }
+
+            #s1 {
+                position: relative;
+                top: 30px;
+                bottom: 20px;
+            }
+
+                #s1 h3 {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    color: #4180BF;
+                }
+
+            .card img {
+                height: 350px;
+            }
+
+            /*.odd{
+
+            height:300px;
+            color:white;
+            background-color:black;
+
+        }*/
+            #footer {
+                color: azure;
+                background-color: black;
+                height: 260px;
+                position: relative;
+                top: 30px;
+            }
+
+                #footer ul li {
+                    list-style: none;
+                }
+
+                #footer h5 {
+                    position: relative;
+                    top: 10px;
+                    margin-left: 30px;
+                    color: darkgray;
+                }
+    </style>
+</head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img _ngcontent-serverapp-c1="" alt="flipkart Logo" src="Flipkart-logo.png" width="50">
+                    Flipkart
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                    </ul>
+                    <!-- Add shoping An dlogin button  -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-cart-plus fa-2x" title="View Cart" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br /><br />
+        <section id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Get in touch with us</h5>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput1" placeholder="your name">
+                            <label for="floatingInput">your name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingInput2" placeholder="Contact Number">
+                            <label for="floatingPassword">Contact Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Write Your Query</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="button" value="Submit" class="btn btn-outline-primary" />
+                        </div>
+                        <br />
+                        <br />
+
+
+                        <h5>FAQ's</h5>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Question 1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Can I reactivate my inactive Flipkart account? </strong> Yes. To reactivate your Flipkart account, simply log in with your registered email ID or mobile number/password combination used before deactivation. Your account data will be fully restored, default subscription settings applied.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Question 2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>
+                                            Why does it take time for the refund amount to be credited when it was already processed by Flipkart ?
+                                        </strong> Once the refund has been processed, the bank takes some time to reverse your initial transaction and complete the refund. However, the refund amount can be seen in your account within the time frame provided to you. Please contact your bank with the refund reference/UTR number in case you don't see the refund amount in your account after the specified timeframe.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Question 3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Can I modify/change the specification for the ordered product without cancelling it?</strong> No, once an order is placed the specification of the product can not be modified.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4740734223474!2d73.82750367592722!3d18.507466969572857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c01b4c092d2d%3A0x7c010136a378ae2a!2sThinkQuotient%20Software%20Private%20Limited!5e0!3m2!1sen!2sin!4v1696930371758!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Footer -->
+        <footer id="footer">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-2 ">
+                        <h5>ABOUT</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Flipkart Stories</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Flipcart Wholesale</a></li>
+                            <li><a href="#">Cleartrip</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 ">
+                        <h5>HELP</h5>
+                        <ul>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Cancllation & Return</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Infringement</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 ">
+                        <h5>CONSUMER POLICY</h5>
+
+                        <ul>
+                            <li><a href="#">Cancellation & Returns</a></li>
+                            <li><a href="#">Termes of Use</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#"> Redressal</a></li>
+                            <li><a href="#">EPR Compliance</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 ">
+                        <h5>SOCIAL</h5>
+
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 ">
+                        <h4>MAIL Us:</h4>
+
+                        <p>
+                            Flipkart Internet Private Limited,
+                            Buildings Alyssa, Begonia &
+                            Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103,
+                            Karnataka, India
+                        </p>
+                    </div>
+
+                    <div class="col-2 ">
+                        <h4>Registered Office Address:</h4>
+
+                        <p>
+                            Flipkart Internet Private Limited,
+                            Buildings Alyssa, Begonia &
+                            Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103,
+                            Karnataka, India
+                            CIN : U51109KA2012PTC066107
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row" style="background-color:dimgray">
+                    <div class="col-6 " style="color:blue"></div>
+                    <div class="col-2 ">
+                        <h6> &copy;Think Quotient-2023</h6>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                        <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- Add this in Body -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </body>
+</html>

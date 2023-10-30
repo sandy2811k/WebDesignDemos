@@ -1,0 +1,68 @@
+﻿
+
+<html >
+<head>
+    
+</head>
+<body>
+    Enter a Name : <input type="text" id="text1" /> <br /><br />
+    <input type="button" value="Add" onclick="add()" />
+    <input type="button" value="Remove" onclick="remove()" />
+    <input type="button" value="Sort" onclick="Ascending()" />
+    <div id="d1">
+
+
+    </div>
+    <script>
+        var names = [];// an empty array
+        function add() {
+            var ispresent = false;
+            for (var i = 0; i < names.length; i++) {
+                if (document.getElementById("text1").value == names[i]) {
+                    ispresent = true;
+                    break;
+                }
+            }
+            if (ispresent == false) {
+                names.push(document.getElementById("text1").value);
+            }
+            else {
+                alert("name already exit");
+            }
+            display();
+        }
+        function remove() {
+            for (var i = 0; i < names.length; i++) {
+                if (names[i] == document.getElementById("text1").value) {
+
+
+                    names.splice(i, 1);
+                    break;
+                }
+            }
+            display();
+        }
+
+
+
+
+        function display() {
+            var data = "<ol>";
+            for (var i = 0; i < names.length; i++) {
+                data += "<li>" + names[i] + "</li>";
+            }
+            data += "</ol>";
+            //  console.log(data);
+            document.getElementById("d1").innerHTML = data;
+        }
+
+        function Ascending() {
+            for (var i = 0; i < names.length; i++) {
+                names.sort();
+                display();
+            }
+        }
+</script>
+</body >
+
+</html>

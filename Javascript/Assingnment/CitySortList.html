@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+    
+    <title>Create an array of 5 cities. Add two cities in an array at 1st & 2nd index. sort the city  & display list in ordered list </title>
+</head>
+<body>
+    <script>
+        var cities = ["Pune", "Mumbai", "Delhi", "Nashik"];
+        //Add two cities in an array at 1st & 2nd index
+        cities.splice(1, 0, "Nagar", "Sambhajinagar");
+        cities.sort();
+
+        for (var i = 0; i < cities.length; i++) {
+            document.write("<br/>" +cities[i]);
+        }
+
+    </script>
+</body>
+</html>

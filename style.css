@@ -1,0 +1,47 @@
+
+h { color:red;
+}
+
+#p1{
+    background-color:violet;
+    font-size:29px;
+    font-weight:bold;
+    color:brown;
+}
+
+#p2 {
+/* Use !important then 1st priority for this */
+    background-color: red !important; 
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
+    margin: 50px 50px 50px 50px;
+}
+
+#d1 {
+    /* This is sample text*/
+    background-color: #4e63d9;
+    border:solid ;
+    border-color:blueviolet;
+    font-size: 36px;
+    color: white;
+    margin: 50px 50px 50px 50px; /* Area or space around element*/
+    padding: 15px 15px 15px; /* space bet border & text*/
+    box-shadow: 4px 7px 13px 0px #000a00;
+    border-radius: 4px 29px 0px 30px;
+}
+m1{
+    margin:50px 50px 50px 50px;
+}
+
+
+/*
+    Use this in usingCss.html file
+*/
+.center-text{
+    text-align:center
+}
+
+.font{
+    font-size:20px;
+}

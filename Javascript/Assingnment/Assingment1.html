@@ -1,0 +1,39 @@
+﻿<html >
+<head>
+    <!--1. Create two fields password & confirm password in HTML,
+    validate that user has entered same password & confirm password using javascript-->
+    <title>Password check valid of not</title>
+</head>
+<body>
+    <form id="passwordPage">
+        <label>Password : </label>
+        <input type="password" id="d1" name="password" required />
+        <br /><br />
+
+        <label>Confirm Password : </label>
+        <input type="password" id="d2" name="Confirm password" required />
+
+        <br /><br />
+        <input type="button" value="Submit" onclick="validPassword()" />
+
+        <br /><br />
+    </form>
+    <script>
+        function validPassword()
+        {
+            var password = document.getElementById("d1").value;
+            var confirmpassword = document.getElementById("d2").value;
+
+            if (password == confirmpassword) {
+                alert("it's Valid Password...");
+            }
+            else
+            {
+                alert("Password not same,Enter Same Password..");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

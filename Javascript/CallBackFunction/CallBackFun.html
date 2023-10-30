@@ -1,0 +1,27 @@
+﻿<html >
+<head>
+    
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        //a=10;
+        //b=20;
+        //myFunction=display;
+        function add(x, y, display) {
+            var c = x + y;
+            display(c);
+
+        }
+        function display(result) {
+            document.getElementById("d1").innerHTML = result;
+        }
+        add(10, 20, display);//call back function
+        //add function exe first
+        // then display function get executed
+        // display function will wait till the add function completes its exe
+
+    </script>
+
+</body>
+</html>
